@@ -1,0 +1,139 @@
+/* CSS */
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* Tampilan Dasar */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  background-color: rgb(25, 25, 25);
+  height: inherit;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Tampilan Kalkulator */
+
+.kalkulator {
+  border: 1px solid rgb(31, 31, 31);
+  background-color: rgb(31, 31, 31);
+  border-radius: 20px;
+  flex-basis: 540px;
+  width: 400px;
+  padding: 40px;
+  padding-right: 65px;
+}
+
+/* Input */
+
+.display {
+  width: 100%;
+}
+
+.display input {
+  width: 100%;
+  background-color: rgb(31, 31, 31);
+  color: white;
+  text-align: right;
+  padding: 40px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 40px;
+}
+
+.display input::placeholder {
+  color: white;
+}
+
+/* Tombol input */
+
+/* Tombol Bawah */
+
+.calc-button-row-bottom {
+  display: flex;
+  flex-basis: 20%;
+  font-size: 24px;
+  height: 65px;
+}
+
+.calc-button-bottom {
+  flex-basis: 20%;
+  font-size: 24px;
+  height: 65px;
+  background-color: rgb(56, 56, 56);
+  border: none;
+  border-radius: 15px;
+  margin-right: 27px;
+  color: white;
+}
+
+.calc-button-bottom:hover {
+  background-color: inherit;
+  color: inherit;
+}
+
+/* Tombol Keseluruhan <Selain Bawah> */
+
+.calc-button-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0;
+}
+
+.calc-button {
+  flex-basis: 20%;
+  font-size: 24px;
+  height: 65px;
+  background-color: rgb(56, 56, 56);
+  border: none;
+  border-radius: 15px;
+  color: white;
+}
+
+.calc-button-top {
+  flex-basis: 20%;
+  font-size: 24px;
+  height: 65px;
+  background-color: rgb(31, 31, 31);
+  color: rgb(64, 255, 0);
+  border: none;
+  border-radius: 15px;
+}
+
+.calc-button:last-child {
+  border: none;
+  color: rgb(64, 255, 0);
+  background-color: rgb(31, 31, 31);
+}
+
+.calc-button:hover {
+  background-color: inherit;
+  color: inherit;
+}
+
+.calc-button-top:hover {
+  color: inherit;
+}
+
+.double {
+  background-color: rgb(64, 255, 0);
+  color: black;
+  border-radius: 15px;
+  padding: 62px 0px;
+}
+
+.double:hover {
+  background-color: rgb(107, 255, 58);
+}
